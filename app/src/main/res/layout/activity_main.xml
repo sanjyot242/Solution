@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient"
+    android:id="@+id/mainlay">
+
+
+    <TextView
+        android:id="@+id/Living"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="244dp"
+        android:background="@color/pink"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Living Room"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/livlay"
+        android:layout_marginTop="150dp">
+
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:drawableLeft="@drawable/ic_lightbulb_outline_black_24dp"
+            android:textOff=" Light OFF"
+            android:textOn="Light ON"
+            />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:textOff="Fan Off "
+            android:textOn=" Fan ON" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Bedroom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livlay"
+        android:layout_marginTop="75dp"
+        android:background="@color/pink"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Bedroom"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Bedlay"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/Bedroom">
+
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:textOff=" Light OFF"
+            android:textOn=" light ON"  />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:checked="true"
+            android:textOff=" fan Off "
+            android:textOn=" fan ON" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+
